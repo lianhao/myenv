@@ -1,0 +1,14 @@
+Host github.com
+    ProxyCommand /bin/git-proxy %h %p
+Host git.openstack.com
+    ProxyCommand /bin/git-proxy %h %p
+Host review.openstack.org
+    ProxyCommand /bin/git-proxy %h %p
+    User lianhao-lu
+    Port 29418
+Host intelvm
+    HostName otc-disteng.ostc.intel.com
+    User llu15
+    IdentityFile ~/.ssh/intelvm-rsa.key
+
+
