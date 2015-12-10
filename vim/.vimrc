@@ -95,3 +95,6 @@ let python_highlight_all=1
 syntax on
 filetype plugin on
 filetype indent plugin on
+
+" Always show powerline statusline
+set laststatus=2
