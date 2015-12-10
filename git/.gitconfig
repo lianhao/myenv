@@ -1,0 +1,15 @@
+[core]
+	gitproxy = none for intel.com
+	gitproxy = git-proxy
+	editor = vim
+
+[user]
+	name = Lianhao Lu
+	email = lianhao.lu@intel.com
+[color]
+	ui = auto
+
+[gitreview]
+	username = lianhao-lu
+[http]
+	postBuffer = 52428800
