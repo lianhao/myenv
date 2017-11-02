@@ -1,0 +1,15 @@
+[Unit]
+Description=SSH tunnel for stable neworking connection
+ConditionPathExists=|/usr/bin
+After=network.target
+
+[Service]
+User=cloud
+ExecStart=/usr/bin/ssh -NT -o ServerAliveInterval=60 -o ExitOnForwardFailure=yes -i /home/cloud/.ssh/intelvm-rsa.key -L 28888:10.7.211.16:1080 llu15@otc-disteng.ostc.intel.com
+
+# Restart every >2 seconds to avoid StartLimitInterval failure
+RestartSec=5
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
