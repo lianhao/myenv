@@ -1,0 +1,7 @@
+After devstack installation completed, please check to make sure the br-ex doesn't have ip address of 192.168.1.1:
+
+    sudo ip -4 a br-ex
+
+
+Otherwise, please remove that ip from br-ex.
+
